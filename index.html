@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="section.css">
+  <title>Louay.dev</title>
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">
+      Louay.dev
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li> <a href="#about"> About </a> </li>
+        <li> <a href="#experience"> Experience </a> </li>
+        <li> <a href="#projects"> Projects </a> </li>
+        <li> <a href="#contact"> Contact </a> </li>
+      </ul>
+    </div>
+
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">
+      Louay.dev
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="togglemenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+        <li> <a href="#about" onclick="togglemenu()"> About </a> </li>
+        <li> <a href="#experience" onclick="togglemenu()"> Experience </a> </li>
+        <li> <a href="#projects" onclick="togglemenu()"> Projects </a> </li>
+        <li> <a href="#contact" onclick="togglemenu()"> Contact </a> </li>
+      </ul>
+
+    </div>
+    </div>
+  </nav>
+  <section id="profile"  >
+    <div class="section__pic-container">
+      <img src="images/louay.png" alt="louay pic" id="louay-pic" >
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Louay Houimli</h1>
+      <p class="section__text__p2">A 17 Years Old Front End Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" >Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+
+      </div>
+      <div id="social-container">
+        <img src="images/linkedin.png" alt="Louay linkedin" class="icon" onclick="">
+        <img src="images/github.png" alt="Louay linkedin" class="icon" onclick="location.href='https://github.com/LouayHouimli'">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" >
+    <p class="section__text__p1">Get to know me more</p>
+    <h1 class="title">About me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="images/louay1.png" alt="Louay about picture" class="about-pic">
+
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="images/experience.png" alt="Louay experience" class="icon">
+            <h3>Experience</h3>
+            <p>+1 Year <br> Front End Developement </p>
+          </div>
+          <div class="details-container">
+            <img src="images/education.png" alt="Louay experience" class="icon">
+            <h3>Education</h3>
+            <p>Bac Informatique 2024 <br> Self Learning </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque non, quasi debitis expedita molestiae! Praesentium voluptatem ipsum et at commodi officia odio nesciunt nemo. Modi cumque, unde vel vero ratione pariatur, sequi sint esse, cupiditate explicabo repudiandae sit? Illum similique veniam sed odit aut necessitatibus neque non nobis accusamus.</p>
+        </div>
+      </div>
+    </div>
+    <img src="images/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#experience'" >
+  </section>
+
+  <section id="experience" >
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="images/html.png" alt="experience icon" class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="images/css-3.png" alt="experience icon" class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="images/java-script.png" alt="experience icon" class="icon">
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            
+           
+            
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="images/python.png" alt="experience icon" class="icon">
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="images/sql-server.png" alt="experience icon" class="icon">
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="images/php.png" alt="experience icon" class="icon">
+              <div>
+                <h3>PHP</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            
+           
+            
+          </div>
+        </div>
+        
+          
+        </div>
+      </div>
+    </div>
+    <img src="images/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#projects'" >
+    
+  </section>
+
+ <section id="projects" >
+  <p class="section__text__p1">
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="images/project-1.png" alt="project 1" class="project-img">
+          <div>
+            <h2 class="experience-sub-title project-title">Project 1</h2>
+            <div class="btn-container">
+              <button class="btn btn-ccolor-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </p>
+
+ </section> 
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
