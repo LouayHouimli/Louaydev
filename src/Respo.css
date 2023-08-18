@@ -1,0 +1,410 @@
+@media screen and (max-width: 1400px) {
+    .shape {
+      background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+      background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid #ccc;
+      
+      animation: morph 8s ease-in-out infinite;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      height: 400px;
+  
+      transition: all 1s ease-in-out;
+      width: 400px;
+      z-index: 5;
+    }
+    
+    
+    @keyframes morph {
+      0% {
+          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+          background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid #ccc;
+      } 
+      
+      50% {
+          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+          background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid #ccc;
+      }
+      
+      100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid #ccc;
+      } 
+    }
+    #experience{
+     
+      height: 90vh;
+    
+    }
+    .dark-mode-icon {
+      width: 30px; /* Set the width and height as per your icon */
+      height: 30px;
+      position: absolute;
+      right: 2%;
+      cursor: pointer;
+      /* Add any additional styling you want for the icon */
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .shape {
+      background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+      background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: morph 8s ease-in-out infinite;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      height: 300px;
+      transition: all 1s ease-in-out;
+      width: 400px;
+      z-index: 5;
+    }
+  
+    #experience{
+     
+      height: 90vh;
+    
+    }
+    .dark-mode-icon {
+      width: 30px; /* Set the width and height as per your icon */
+      height: 30px;
+      position: absolute;
+      right: 2%;
+      cursor: pointer;
+      /* Add any additional styling you want for the icon */
+    }
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .shape {
+      background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+      background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: morph 8s ease-in-out infinite;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+     
+      height: 280px;
+      transition: all 1s ease-in-out;
+      width: 280px;
+      z-index: 5;
+    }
+    #experience{
+     
+      height: 150vh;
+    
+    }
+    .dark-mode-icon {
+      width: 30px; /* Set the width and height as per your icon */
+      height: 30px;
+      position: absolute;
+      right: 2%;
+      cursor: pointer;
+      /* Add any additional styling you want for the icon */
+    }
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .shape {
+      background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+      background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: morph 8s ease-in-out infinite;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      height: 250px;
+      transition: all 1s ease-in-out;
+      width: 250px;
+      z-index: 5;
+    }
+    
+    
+    @keyframes morph {
+      0% {
+          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+          background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+      
+      50% {
+          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+          background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+      
+      100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+    }
+  }
+  
+  
+  @media screen and (max-width: 460px) {
+    .shape {
+      background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+      background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: morph 8s ease-in-out infinite;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      height: 200px;
+      transition: all 1s ease-in-out;
+      width: 200px;
+      z-index: 5;
+    }
+    
+    
+    @keyframes morph {
+      0% {
+          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+          background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+      
+      50% {
+          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+          background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+      
+      100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+    }
+  }
+  
+  @media screen and (max-width: 344px) {
+    .shape {
+      background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+      background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: morph 8s ease-in-out infinite;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      height: 180px;
+      transition: all 1s ease-in-out;
+      width: 180px;
+      z-index: 5;
+    }
+    
+    
+    @keyframes morph {
+      0% {
+          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+          background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+      
+      50% {
+          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+          background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+      
+      100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+    }
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+    .shape {
+      background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+      background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: morph 8s ease-in-out infinite;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      height: 160px;
+      transition: all 1s ease-in-out;
+      width: 160px;
+      z-index: 5;
+    }
+    
+    
+    @keyframes morph {
+      0% {
+          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+          background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+      
+      50% {
+          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+          background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+      
+      100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        background-image: url('https://i.ibb.co/vm6v1c3/347560506-201493589475779-2282019623759234121-n.jpg');
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      } 
+    }
+  }
+
+
+@media screen and (max-width: 312px) {
+  .icon{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

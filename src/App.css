@@ -13,6 +13,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid black;
   animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   height: 400px;
@@ -30,6 +31,7 @@
 		background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid #ccc;
 	} 
 	
 	50% {
@@ -39,6 +41,7 @@
 		background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid #ccc;
 	}
   
 	100% {
@@ -48,6 +51,7 @@
 		background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid #ccc;
 	} 
 }
 
@@ -88,6 +92,7 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  color: black;
 }
 
 a {
