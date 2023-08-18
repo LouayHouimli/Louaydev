@@ -24,7 +24,7 @@
 @media screen and (max-width: 1200px) {
   #experience{
    
-    height: 50vh;
+    height: 90vh;
   
   }
   .dark-mode-icon {
@@ -72,7 +72,7 @@
 @media screen and (max-width: 600px) {
   #experience{
    
-    height: 130vh;
+    height: 150vh;
   
   }
   .dark-mode-icon {
