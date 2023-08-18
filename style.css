@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -435,3 +436,156 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Background Animation */
+/* Add this at the end of your existing CSS file */
+
+/* Dark Mode */
+
+/* Dark Mode */
+body:not(.dark-mode) {
+  position: relative;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(0, 0, 0, 0.1) 50%
+  );
+  background-size: 200% 200%;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.star-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  animation: starAnimation 20s linear infinite;
+}
+
+@keyframes starAnimation {
+  0%, 100% {
+    transform: translateY(-100vh);
+  }
+}
+
+/* Add these rules to your existing CSS */
+.star {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('christmas-stars.png'); /* Replace with your star image URL */
+  background-size: cover;
+  animation: starAppear 20s ease-out forwards, starFall 20s linear forwards;
+  opacity: 0;
+}
+.dark-mode .star {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('christmas-stars.png'); /* Replace with your star image URL */
+  background-size: cover;
+  animation: starAppear 20s ease-out forwards, starFall 20s linear forwards;
+  opacity: 0;
+  filter: brightness(0) invert(1) grayscale(1) brightness(2); /* Apply filter to turn the image white */
+}
+
+
+
+@keyframes starAppear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes starFall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+
+
+
+
+
+
+.dark-mode-icon {
+  width: 30px; /* Set the width and height as per your icon */
+  height: 30px;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  /* Add any additional styling you want for the icon */
+}
+
+
+
+/* Adjust text color and link styles for dark mode */
+body.dark-mode p,
+body.dark-mode a {
+  color: white;
+}
+
+
+
+/* Filter images for dark mode */
+body.dark-mode img:not(#louay) {
+  filter: brightness(0) invert(1);
+}
+/* Add this at the end of your existing CSS file */
+
+/* Dark Mode Button Text Color */
+body.dark-mode button {
+  color: white;
+}
+
+body.dark-mode .spans{
+  background-color: white;
+}
+body.dark-mode .menu-links{
+  background-color: black;
+
+}
+/* Dark Mode Special Button Styling */
+
+
+/* ... Your existing CSS code ... */
+
+body.dark-mode .color-container{
+  background: black;
+}
+
+body.dark-mode .details-container{
+  background: black;
+}
+
+body.dark-mode .experience-sub-title{
+  color: white;
+}
+

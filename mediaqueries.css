@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   #experience{
    
-    height: 130vh;
+    height: 90vh;
   
   }
   #profile {
@@ -14,6 +14,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+  #experience{
+   
+    height: 50vh;
+  
+  }
   #desktop-nav {
     display: none;
   }
