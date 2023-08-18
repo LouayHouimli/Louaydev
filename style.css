@@ -539,7 +539,7 @@ body:not(.dark-mode) {
   width: 30px; /* Set the width and height as per your icon */
   height: 30px;
   position: absolute;
-  right: 5%;
+  right: 8%;
   cursor: pointer;
   /* Add any additional styling you want for the icon */
 }
