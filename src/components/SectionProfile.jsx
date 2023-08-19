@@ -37,18 +37,20 @@ const SectionProfile = () => {
             src={linkedinimage}
             alt="My LinkedIn profile"
             className="icon"
+            id='icons'
             onClick={() => window.location.href = '#'}
           />
           <img
             src={githubimage}
             alt="My Github profile"
             className="icon"
+            id='icons'
             onClick={() => window.open('https://github.com/LouayHouimli')}
           />
-          <img src={discordimage} alt="Louay discord" className="icon" />
-          <img src={facebookimage} alt="Louay facebook" className="icon" />
-          <img src={instagramimage} alt="Louay instagram" className='icon' />
-          <img src={twitterimage} alt="Louay twitter" className='icon' />
+          <img src={discordimage} alt="Louay discord" className="icon" id='icons' />
+          <img src={facebookimage} alt="Louay facebook" className="icon" id='icons' />
+          <img src={instagramimage} alt="Louay instagram" className='icon' id='icons' />
+          <img src={twitterimage} alt="Louay twitter" className='icon' id='icons' />
         </div>
       </div>
     </section>

@@ -1,18 +1,46 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import moonImage from '../images/moon.png';
-
 
 const Nav = () => {
   const toggleDarkMode = () => {
     const body = document.body;
-  body.classList.toggle("dark-mode");
+    body.classList.toggle("dark-mode");
 
-  if (body.classList.contains("dark-mode")) {
-    body.classList.remove("background-animation");
-  } else {
-    body.classList.add("background-animation");
-  }
+    if (body.classList.contains("dark-mode")) {
+      body.classList.remove("background-animation");
+    } else {
+      body.classList.add("background-animation");
+    }
   };
+
+  useEffect(() => {
+    const handleColorSchemeChange = (event) => {
+      if (event.matches) {
+        // Dark mode is active
+        document.body.classList.add("dark-mode");
+        document.body.classList.remove("background-animation");
+      } else {
+        // Light mode is active
+        document.body.classList.remove("dark-mode");
+        document.body.classList.add("background-animation");
+      }
+    };
+
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+    prefersDarkMode.addListener(handleColorSchemeChange);
+
+    // Set initial color mode based on user preference
+    if (prefersDarkMode.matches) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+
+    // Remove the listener when the component unmounts
+    return () => {
+      prefersDarkMode.removeListener(handleColorSchemeChange);
+    };
+  }, []);
 
   return (
     <nav id="desktop-nav">
