@@ -11,6 +11,7 @@ import SectionProjects from './components/SectionProjects';
 import SectionContact from './components/SectionContact';
 
 
+
 const App = () => {
   return (
     <div>
@@ -22,11 +23,6 @@ const App = () => {
       <SectionProjects/>
       <SectionContact/>
       <Footer/>
-
-    
-      
-
-      {/* ... Other JSX components ... */}
     </div>
   );
 };

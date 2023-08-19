@@ -95,20 +95,36 @@ nav {
   color: black;
 }
 
+li{
+  transition: transform 0.3s ease;
+}
+li:hover{
+  transform: scale(1.1);
+}
+
 a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+
+
 }
 
 a:hover {
   color: grey;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+ 
+
+  
+  
 }
 #app{
   font-size: 50px;
+}
+#app1{
+  font-size: 20px;
 }
 .logo {
   font-size: 2rem;
@@ -156,7 +172,8 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  border-radius: 5%;
+ 
 }
 
 .menu-links a {
@@ -175,6 +192,33 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  z-index: 999;
+
+}
+
+.menu-links ul li a {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.menu-links.open ul li a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menu-links.open ul li a {
+  animation: slideIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
 .hamburger-icon.open span:first-child {
@@ -266,6 +310,16 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  
+  
+}
+
+#icons{
+  transition: all 0.3s ease-in-out;
+}
+#icons:hover{
+  transform: scale(1.5);
+
 }
 
 /* BUTTONS */
