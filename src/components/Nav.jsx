@@ -1,14 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import moonImage from '../images/moon.png';
+import LoadingScreen from './LoadingScreen'; // Correct relative path
 
 const Nav = () => {
+  const [darkMode, setDarkMode] = useState(false); // Local darkMode state
+
   const toggleDarkMode = () => {
+    setDarkMode(!darkMode); // Toggle local dark mode state
+
     const body = document.body;
     body.classList.toggle("dark-mode");
 
-    if (body.classList.contains("dark-mode")) {
+    const appDiv = document.querySelector('.app');
+    if (!darkMode) {
+      appDiv.classList.add("dark-mode"); // Add the dark-mode class to app div
       body.classList.remove("background-animation");
     } else {
+      appDiv.classList.remove("dark-mode"); // Remove the dark-mode class from app div
       body.classList.add("background-animation");
     }
   };
@@ -19,10 +27,12 @@ const Nav = () => {
         // Dark mode is active
         document.body.classList.add("dark-mode");
         document.body.classList.remove("background-animation");
+        setDarkMode(true); // Update local dark mode state
       } else {
         // Light mode is active
         document.body.classList.remove("dark-mode");
         document.body.classList.add("background-animation");
+        setDarkMode(false); // Update local dark mode state
       }
     };
 
@@ -32,11 +42,13 @@ const Nav = () => {
     // Set initial color mode based on user preference
     if (prefersDarkMode.matches) {
       document.body.classList.add("dark-mode");
+      setDarkMode(true); // Update local dark mode state
     } else {
       document.body.classList.remove("dark-mode");
+      setDarkMode(false); // Update local dark mode state
     }
 
-    // Remove the listener when the component unmounts
+    // Cleanup function
     return () => {
       prefersDarkMode.removeListener(handleColorSchemeChange);
     };
@@ -49,7 +61,7 @@ const Nav = () => {
       <img
         src={moonImage}
         alt="Dark Mode Toggle"
-        className="dark-mode-icon"
+        className={`dark-mode-icon ${darkMode ? 'active' : ''}`}
         onClick={toggleDarkMode}
       />
 
