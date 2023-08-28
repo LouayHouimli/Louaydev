@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import Nav from './components/Nav';
 import HamburgerNav from './components/HamburgerNav';
 import SectionProfile from './components/SectionProfile';
@@ -22,52 +23,33 @@ const App = () => {
     }, 2000); // Simulating a 2-second loading time
   }, []);
 
-  const toggleDarkMode = () => {
-    const body = document.body;
-    const appDiv = document.querySelector('.app');
-
-    setDarkMode(!darkMode); // Toggle dark mode state
-
-    if (!darkMode) {
-      appDiv.classList.add("dark-mode"); // Add the dark-mode class to app div
-      body.classList.remove("background-animation");
-    } else {
-      appDiv.classList.remove("dark-mode"); // Remove the dark-mode class from app div
-      body.classList.add("background-animation");
-    }
-  };
-
   useEffect(() => {
-    const handleColorSchemeChange = (event) => {
-      if (event.matches) {
-        document.body.classList.add("dark-mode");
-        document.body.classList.remove("background-animation");
-        setDarkMode(true);
-      } else {
-        document.body.classList.remove("dark-mode");
-        document.body.classList.add("background-animation");
-        setDarkMode(false);
-      }
-    };
+    // Code for toggling dark mode
 
-    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
-    prefersDarkMode.addListener(handleColorSchemeChange);
+    // ...
 
-    if (prefersDarkMode.matches) {
-      document.body.classList.add("dark-mode");
-      setDarkMode(true);
-    } else {
-      document.body.classList.remove("dark-mode");
-      setDarkMode(false);
-    }
-
-    return () => {
-      prefersDarkMode.removeListener(handleColorSchemeChange);
-    };
   }, []);
 
   return (
     <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
+      <Helmet>
+        {/* Start of Tawk.to Script */}
+        <script type="text/javascript">
+          {`
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+              s1.async=true;
+              s1.src='https://embed.tawk.to/64ec9d30b2d3e13950ec891a/1h8u4c22v';
+              s1.charset='UTF-8';
+              s1.setAttribute('crossorigin','*');
+              s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </script>
+        {/* End of Tawk.to Script */}
+      </Helmet>
+
       {isLoading ? (
         <div className="loading-screen">
           <img src={loadingGif} alt="Loading" className="loading-gif" />
@@ -83,7 +65,6 @@ const App = () => {
           <SectionProjects />
           <SectionContact />
           <Footer />
-          
         </>
       )}
     </div>
