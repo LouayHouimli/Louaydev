@@ -83,12 +83,7 @@ const App = () => {
           <SectionProjects />
           <SectionContact />
           <Footer />
-          <button
-            className={`dark-mode-icon ${darkMode ? 'active' : ''}`}
-            onClick={toggleDarkMode}
-          >
-            {/* Your icon markup here */}
-          </button>
+          
         </>
       )}
     </div>
