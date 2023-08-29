@@ -15,12 +15,18 @@ import HomeSectionContact from './components/SectionContact';
 import loadingGif from './images/giphy.gif';
 import NotFound from './components/NotFound';
 
+function RedirectResume() {
+  useEffect(() => {
+    window.location.href = 'https://www.google.com';
+  }, []);
+
+  return null; // This component doesn't render anything
+}
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
   const [initialLoad, setInitialLoad] = useState(true); // Track the initial load
-
 
   const Home = () => (
     <>
@@ -45,8 +51,8 @@ const App = () => {
     // Toggle dark mode logic
   }, []);
 
-  // Handle initial redirection
   useEffect(() => {
+    // Handle initial redirection
     if (initialLoad) {
       setInitialLoad(false);
     }
@@ -87,15 +93,11 @@ const App = () => {
 
             {/* Add other routes here if needed */}
             <Route path="*" element={<NotFound />} />
-           
+
             {/* For example:
-            {/* Add other routes here if needed */}
-            <Route path="/about" element={<HomeSectionContact />} />
-            {/* For example:
-            <Route path="/about">
-              <AboutComponent />
-            </Route>
+            <Route path="/about" element={<AboutComponent />} />
             */}
+            <Route path="/resume" element={<RedirectResume />} />
           </Routes>
         )}
       </div>
