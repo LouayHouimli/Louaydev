@@ -86,6 +86,9 @@ const App = () => {
             {/* Add other routes here if needed */}
             <Route path="*" element={<NotFound />} />
             {/* For example:
+            {/* Add other routes here if needed */}
+            <Route path="/about" element={<HomeSectionContact />} />
+            {/* For example:
             <Route path="/about">
               <AboutComponent />
             </Route>
