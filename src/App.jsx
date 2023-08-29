@@ -12,6 +12,7 @@ import HomeSectionContact from './components/SectionContact';
 import loadingGif from './images/giphy.gif';
 import './App.css';
 import './Respo.css';
+import Homes from './pages/home';
 
 // Define your NotFound component
 const NotFound = () => (
@@ -88,7 +89,7 @@ const App = () => {
               <Route path="/" element={<Navigate to="/home" />} />
 
               {/* Render HomeNav and HomeHamburgerNav within the /home route */}
-              <Route path="/home" element={<Home />} />
+              <Route path="/home" element={<Homes />} />
               
               {/* Add your NotFound component route */}
               <Route path="*" element={<NotFound />} />
