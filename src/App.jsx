@@ -1,73 +1,62 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
-import Nav from './components/Nav';
-import HamburgerNav from './components/HamburgerNav';
-import SectionProfile from './components/SectionProfile';
-import SectionAbout from './components/SectionAbout';
-import SectionExperience from './components/SectionExperience';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async'; // Import HelmetProvider
+import HomeNav from './components/Nav';
+import HomeHamburgerNav from './components/HamburgerNav';
+import HomeSectionProfile from './components/SectionProfile';
+import HomeSectionAbout from './components/SectionAbout';
+import HomeSectionExperience from './components/SectionExperience';
+import HomeSectionProjects from './components/SectionProjects';
+import HomeSectionContact from './components/SectionContact';
 import Footer from './components/Footer';
-import './App.css'; // Link the main CSS file
+import './App.css';
 import './Respo.css';
-import SectionProjects from './components/SectionProjects';
-import SectionContact from './components/SectionContact';
-import loadingGif from './images/giphy.gif'; // Import the loading GIF
+import loadingGif from './images/giphy.gif';
+
+const Home = () => (
+  <>
+    <HomeNav />
+    <HomeHamburgerNav />
+    <HomeSectionProfile />
+    <HomeSectionAbout />
+    <HomeSectionExperience />
+    <HomeSectionProjects />
+    <HomeSectionContact />
+    <Footer />
+  </>
+);
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // Simulating an API call or content loading
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Simulating a 2-second loading time
+    }, 2000);
   }, []);
 
   useEffect(() => {
-    // Code for toggling dark mode
-
-    // ...
-
+    // Toggle dark mode logic
   }, []);
 
   return (
-    <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
-      <Helmet>
-        {/* Start of Tawk.to Script */}
-        <script type="text/javascript">
-          {`
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/64ec9d30b2d3e13950ec891a/1h8u4c22v';
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-            })();
-          `}
-        </script>
-        {/* End of Tawk.to Script */}
-      </Helmet>
+    <HelmetProvider>
+      <Router>
+        <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
+          {/* ... (your existing code) */}
+          <Routes>
+            {/* Automatically redirect to /home */}
+            <Route path="/" element={<Navigate to="/home" />} />
+            
+            {/* Render the Home component under /home */}
+            <Route path="/home" element={<Home />} />
 
-      {isLoading ? (
-        <div className="loading-screen">
-          <img src={loadingGif} alt="Loading" className="loading-gif" />
-          <p className="loading-text">Loading...</p>
+            {/* Add other routes here if needed */}
+          </Routes>
         </div>
-      ) : (
-        <>
-          <Nav />
-          <HamburgerNav />
-          <SectionProfile />
-          <SectionAbout />
-          <SectionExperience />
-          <SectionProjects />
-          <SectionContact />
-          <Footer />
-        </>
-      )}
-    </div>
+      </Router>
+    </HelmetProvider>
   );
 };
 
