@@ -5,6 +5,12 @@ import project3 from '../images/project-3.png'
 import arrowIcon from '../images/arrow.png';
 
 const SectionProjects = () => {
+  const scrollToContact = () => {
+    const experienceSection = document.getElementById('contact');
+    if (experienceSection) {
+      experienceSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section id="projects">
       <p className="section__text__p1">Browse My Recent</p>
@@ -94,7 +100,7 @@ const SectionProjects = () => {
         src={arrowIcon}
         alt="Arrow icon"
         className="icon arrow"
-        onClick={() => window.location.href = './#contact'}
+        onClick={scrollToContact}
       />
     </section>
   );

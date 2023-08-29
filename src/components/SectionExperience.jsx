@@ -11,6 +11,12 @@ import reactimage from '../images/atom.png'
 
 
 const SectionExperience = () => {
+  const scrollToProjects = () => {
+    const experienceSection = document.getElementById('projects');
+    if (experienceSection) {
+      experienceSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
@@ -110,7 +116,7 @@ const SectionExperience = () => {
         src={arrowIcon}
         alt="Arrow icon"
         className="icon arrow"
-        onClick={() => window.location.href = './#projects'}
+        onClick={scrollToProjects}
       />
     </section>
   );

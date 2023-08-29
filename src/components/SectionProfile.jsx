@@ -1,14 +1,20 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import linkedinimage from '../images/linkedin.png'
-import githubimage from '../images/github.png'
-import discordimage from '../images/discord.png'
-import facebookimage from '../images/facebook.png'
-import instagramimage from '../images/instagram.png'
-import twitterimage from '../images/twitter.png'
-
+import linkedinimage from '../images/linkedin.png';
+import githubimage from '../images/github.png';
+import discordimage from '../images/discord.png';
+import facebookimage from '../images/facebook.png';
+import instagramimage from '../images/instagram.png';
+import twitterimage from '../images/twitter.png';
 
 const SectionProfile = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="profile">
       <div className="section__pic-container">
@@ -28,7 +34,7 @@ const SectionProfile = () => {
           <button className="btn btn-color-2">
             Download CV
           </button>
-          <button className="btn btn-color-2" onClick={() => window.location.href = './#contact'}>
+          <button className="btn btn-color-2" onClick={scrollToContact}>
             Contact Info
           </button>
         </div>

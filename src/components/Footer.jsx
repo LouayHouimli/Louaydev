@@ -1,17 +1,24 @@
 import React from 'react';
 
-
 const Footer = () => {
+  const handleNavLinkClick = (event, sectionId) => {
+    event.preventDefault(); // Prevent default anchor link behavior
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer>
       <nav>
         <div className="nav-links-container">
           <ul className="nav-links">
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'profile')}>Profile</a></li>
+            <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'about')}>About</a></li>
+            <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'experience')}>Experience</a></li>
+            <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'projects')}>Projects</a></li>
+            <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'contact')}>Contact</a></li>
           </ul>
         </div>
       </nav>

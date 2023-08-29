@@ -5,6 +5,13 @@ import educationIcon from '../images/education.png'; // Adjust the path to your 
 import arrowIcon from '../images/arrow.png'; // Adjust the path to your image
 
 const SectionAbout = () => {
+  const scrollToExperience = () => {
+    const experienceSection = document.getElementById('experience');
+    if (experienceSection) {
+      experienceSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="about">
       <p className="section__text__p1">Get To Know More</p>
@@ -52,7 +59,7 @@ My journey began with a zeal for all things web-related, and I've embarked on th
         src={arrowIcon}
         alt="Arrow icon"
         className="icon arrow"
-        onClick={() => window.location.href = './#experience'}
+        onClick={scrollToExperience}
       />
     </section>
   );

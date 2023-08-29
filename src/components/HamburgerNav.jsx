@@ -20,6 +20,17 @@ const HamburgerNav = () => {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   };
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavLinkClick = (event, sectionId) => {
+    event.preventDefault(); // Prevent the default anchor link behavior
+    scrollToSection(sectionId);
+  };
 
   return (
     <nav id="hamburger-nav">
@@ -37,12 +48,13 @@ const HamburgerNav = () => {
           <span className="spans"></span>
         </div>
         <div className="menu-links">
-          <ul>
-            <li><a href="#about" onClick={toggleMenu}>About</a></li>
-            <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
-            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-          </ul>
+        <ul className="nav-links">
+          <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'profile')}>Profile</a></li>
+          <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'about')}>About</a></li>
+          <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'experience')}>Experience</a></li>
+          <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'projects')}>Projects</a></li>
+          <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'contact')}>Contact</a></li>
+        </ul>
         </div>
       </div>
     </nav>
