@@ -13,6 +13,14 @@ import loadingGif from './images/giphy.gif';
 import './App.css';
 import './Respo.css';
 
+// Define your NotFound component
+const NotFound = () => (
+  <div>
+    <h1>404 - Not Found</h1>
+    <p>The page you're looking for does not exist.</p>
+  </div>
+);
+
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
@@ -100,11 +108,3 @@ const App = () => {
 };
 
 export default App;
-
-// Define your NotFound component
-const NotFound = () => (
-  <div>
-    <h1>404 - Not Found</h1>
-    <p>The page you're looking for does not exist.</p>
-  </div>
-);
