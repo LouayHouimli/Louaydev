@@ -12,6 +12,7 @@ import './Respo.css';
 import HomeSectionProjects from './components/SectionProjects';
 import HomeSectionContact from './components/SectionContact';
 import loadingGif from './images/giphy.gif';
+import NotFound from './components/NotFound';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -83,6 +84,7 @@ const App = () => {
             <Route path="/home" element={<Home />} />
 
             {/* Add other routes here if needed */}
+            <Route path="*" element={<NotFound />} />
             {/* For example:
             <Route path="/about">
               <AboutComponent />
