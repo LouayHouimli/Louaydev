@@ -9,10 +9,12 @@ import HomeSectionExperience from './components/SectionExperience';
 import Footer from './components/Footer';
 import './App.css';
 import './Respo.css';
+
 import HomeSectionProjects from './components/SectionProjects';
 import HomeSectionContact from './components/SectionContact';
 import loadingGif from './images/giphy.gif';
 import NotFound from './components/NotFound';
+
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -85,6 +87,7 @@ const App = () => {
 
             {/* Add other routes here if needed */}
             <Route path="*" element={<NotFound />} />
+           
             {/* For example:
             {/* Add other routes here if needed */}
             <Route path="/about" element={<HomeSectionContact />} />
