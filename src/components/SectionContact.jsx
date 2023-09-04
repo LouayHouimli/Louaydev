@@ -14,7 +14,7 @@ const SectionContact = () => {
             alt="Email icon"
             className="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">louayhouimli@engineer.com</a></p>
+          <p><a href="mailto:louayhouimli@engineer.com">louayhouimli@engineer.com</a></p>
         </div>
         <div className="contact-info-container">
           <img
