@@ -14,6 +14,8 @@ import HomeSectionProjects from './components/SectionProjects';
 import HomeSectionContact from './components/SectionContact';
 import loadingGif from './images/giphy.gif';
 import NotFound from './components/NotFound';
+import CountdownTimer from './components/CountdownTimer';
+import NotificationComponent from './components/NotificationComponent';
 
 function RedirectResume() {
   useEffect(() => {
@@ -30,6 +32,7 @@ const App = () => {
 
   const Home = () => (
     <>
+      
       <HomeNav />
       <HomeHamburgerNav />
       <HomeSectionProfile />
@@ -38,6 +41,7 @@ const App = () => {
       <HomeSectionProjects />
       <HomeSectionContact />
       <Footer />
+      
     </>
   );
 
@@ -93,6 +97,10 @@ const App = () => {
 
             {/* Add other routes here if needed */}
             <Route path="*" element={<NotFound />} />
+
+            {/* For example:
+            {/* Add other routes here if needed */}
+            <Route path="/birthday" element={<CountdownTimer />} />
 
             {/* For example:
             <Route path="/about" element={<AboutComponent />} />
