@@ -22,6 +22,12 @@ function RedirectResume() {
   useEffect(() => {
     window.location.href = 'https://www.google.com';
   }, []);
+   }
+
+  function LouayBac2k24() {
+    useEffect(() => {
+      window.location.href = 'https://drive.google.com/drive/folders/11-rGdUieia5Pfw-GGK1xxaxmltNfF-QN?usp=sharing';
+    }, []);
 
   return null; // This component doesn't render anything
 }
@@ -107,7 +113,9 @@ const App = () => {
             <Route path="/about" element={<AboutComponent />} />
             */}
             <Route path="/resume" element={<RedirectResume />} />
-            <Route path="/rcl" component={PDFViewer} />
+            <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
+            
+
           </Routes>
         )}
       </div>

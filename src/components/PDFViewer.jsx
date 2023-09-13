@@ -1,15 +1,13 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf';
 
 function PDFViewer() {
-  const pdfURL = 'https://pdfhost.io/v/VZEMQEMUf_louay'; // Replace with your PDF URL
-
   return (
     <div>
       <h2>Your PDF Viewer</h2>
-      <Document file={pdfURL}>
-        <Page pageNumber={1} />
-      </Document>
+      <p>Click the link below to view the PDF:</p>
+      <a href="https://raw.githubusercontent.com/LouayHouimli/Louaydev/main/src/pdfs/louay.pdf" target="_blank" rel="noopener noreferrer">
+        Open PDF
+      </a>
     </div>
   );
 }
