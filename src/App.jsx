@@ -39,7 +39,7 @@ const App = () => {
       <HomeSectionProfile />
       <HomeSectionAbout />
       <HomeSectionExperience />
-      <HomeSectionProjects />
+      <HomeSectionProjects/>
       <HomeSectionContact />
       <Footer />
       
