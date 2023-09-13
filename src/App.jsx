@@ -16,6 +16,7 @@ import loadingGif from './images/giphy.gif';
 import NotFound from './components/NotFound';
 import CountdownTimer from './components/CountdownTimer';
 import NotificationComponent from './components/NotificationComponent';
+import PDFViewer from './components/PDFViewer';
 
 function RedirectResume() {
   useEffect(() => {
@@ -106,6 +107,7 @@ const App = () => {
             <Route path="/about" element={<AboutComponent />} />
             */}
             <Route path="/resume" element={<RedirectResume />} />
+            <Route path="/rcl" component={PDFViewer} />
           </Routes>
         )}
       </div>
