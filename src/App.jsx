@@ -22,12 +22,12 @@ function RedirectResume() {
   useEffect(() => {
     window.location.href = 'https://www.google.com';
   }, []);
-   }
+}
 
-  function LouayBac2k24() {
-    useEffect(() => {
-      window.location.href = 'https://drive.google.com/drive/folders/11-rGdUieia5Pfw-GGK1xxaxmltNfF-QN?usp=sharing';
-    }, []);
+function LouayBac2k24() {
+  useEffect(() => {
+    window.location.href = 'https://drive.google.com/drive/folders/11-rGdUieia5Pfw-GGK1xxaxmltNfF-QN?usp=sharing';
+  }, []);
 
   return null; // This component doesn't render anything
 }
@@ -39,23 +39,22 @@ const App = () => {
 
   const Home = () => (
     <>
-      
       <HomeNav />
       <HomeHamburgerNav />
       <HomeSectionProfile />
       <HomeSectionAbout />
       <HomeSectionExperience />
-      <HomeSectionProjects/>
+      <HomeSectionProjects />
       <HomeSectionContact />
       <Footer />
-      
     </>
   );
 
   useEffect(() => {
-    setTimeout(() => {
+    // Detect when all resources have finished loading
+    window.onload = () => {
       setIsLoading(false);
-    }, 2000);
+    };
   }, []);
 
   useEffect(() => {
@@ -114,8 +113,6 @@ const App = () => {
             */}
             <Route path="/resume" element={<RedirectResume />} />
             <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
-            
-
           </Routes>
         )}
       </div>
@@ -124,5 +121,3 @@ const App = () => {
 };
 
 export default App;
-
-// update
