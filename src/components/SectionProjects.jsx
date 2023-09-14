@@ -27,18 +27,18 @@ const SectionProjects = () => {
               />
             </div>
             <h2 className="experience-sub-title project-title">Project One</h2>
-            <h3 className="experience-sub-title ">Anime Search Engine</h3>
+            <h3 className="experience-sub-title ">Louay Portfolio</h3>
             <div className="btn-container">
               <button
                 className="btn btn-color-2 project-btn"
                 id="btnspecial"
-                onClick={() => window.open('https://github.com/LouayHouimli/animelouay')}
+                onClick={() => window.open('https://github.com/LouayHouimli/Louaydev')}
               >
                 Github
               </button>
               <button
                 className="btn btn-color-2 project-btn"
-                onClick={() => window.open('https://animelouay.vercel.app/')}
+                onClick={() => window.open('https://louayhouimli.vercel.app/')}
               >
                 Live Demo
               </button>
@@ -54,6 +54,7 @@ const SectionProjects = () => {
               />
             </div>
             <h2 className="experience-sub-title project-title">Project Two</h2>
+            <h3 className="experience-sub-title ">Coming Soon...</h3>
             <div className="btn-container">
               <button
                 className="btn btn-color-2 project-btn"
@@ -79,6 +80,7 @@ const SectionProjects = () => {
               />
             </div>
             <h2 className="experience-sub-title project-title">Project Three</h2>
+            <h3 className="experience-sub-title ">Coming Soon...</h3>
             <div className="btn-container">
               <button
                 className="btn btn-color-2 project-btn"
