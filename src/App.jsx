@@ -51,10 +51,10 @@ const App = () => {
   );
 
   useEffect(() => {
-    // Detect when all resources have finished loading
-    window.onload = () => {
+    // Simulate loading delay even after everything is loaded
+    setTimeout(() => {
       setIsLoading(false);
-    };
+    }, 2000); // Adjust the delay time (in milliseconds) as needed
   }, []);
 
   useEffect(() => {
