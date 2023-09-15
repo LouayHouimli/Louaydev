@@ -16,6 +16,7 @@ import NotFound from './components/NotFound';
 import CountdownTimer from './components/CountdownTimer';
 import NotificationComponent from './components/NotificationComponent';
 import PDFViewer from './components/PDFViewer';
+import Loading from './components/Loading'; // Import your Loading component
 
 function RedirectResume() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function LouayBac2k24() {
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [pageLoaded, setPageLoaded] = useState(false); // Track the page loading status
 
   const Home = () => (
     <>
@@ -46,6 +48,24 @@ const App = () => {
       <Footer />
     </>
   );
+
+  useEffect(() => {
+    // Simulate loading delay even after everything is loaded
+    setTimeout(() => {
+      setPageLoaded(true); // Mark the page as loaded
+    }, 2000); // Adjust the delay time (in milliseconds) as needed
+  }, []);
+
+  // This effect listens for changes in the pageLoaded state and hides the loading screen when the page is loaded
+  useEffect(() => {
+    if (pageLoaded) {
+      // Page is loaded, hide the loading screen
+      const loadingScreen = document.querySelector('.loading-screen');
+      if (loadingScreen) {
+        loadingScreen.style.display = 'none';
+      }
+    }
+  }, [pageLoaded]);
 
   return (
     <Router>
@@ -66,6 +86,9 @@ const App = () => {
             `}
           </script>
         </Helmet>
+
+        {/* Conditionally render the Loading component */}
+        {!pageLoaded && <Loading />}
 
         <Routes>
           {/* Handle initial redirection */}
