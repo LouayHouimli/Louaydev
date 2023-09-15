@@ -33,7 +33,9 @@ function LouayBac2k24() {
 }
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('darkMode') === 'true' // Check localStorage for the preference
+  );
   const [pageLoaded, setPageLoaded] = useState(false); // Track the page loading status
 
   const Home = () => (

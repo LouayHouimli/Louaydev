@@ -7,6 +7,7 @@ const Nav = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode); // Toggle local dark mode state
+    localStorage.setItem('darkMode', newDarkMode);
 
     const body = document.body;
     body.classList.toggle("dark-mode");
