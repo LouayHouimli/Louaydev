@@ -88,8 +88,8 @@ const App = () => {
         </Helmet>
 
         {/* Conditionally render the Loading component */}
+        
         {!pageLoaded && <Loading />}
-
         <Routes>
           {/* Handle initial redirection */}
           <Route path="/" element={<Navigate to="/home" />} />
@@ -108,6 +108,7 @@ const App = () => {
             <Route path="/about" element={<AboutComponent />} />
           */}
           <Route path="/resume" element={<RedirectResume />} />
+          
           <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
         </Routes>
       </div>
