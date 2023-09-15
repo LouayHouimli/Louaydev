@@ -12,7 +12,6 @@ import './Respo.css';
 
 import HomeSectionProjects from './components/SectionProjects';
 import HomeSectionContact from './components/SectionContact';
-import loadingGif from './images/giphy.gif';
 import NotFound from './components/NotFound';
 import CountdownTimer from './components/CountdownTimer';
 import NotificationComponent from './components/NotificationComponent';
@@ -33,9 +32,7 @@ function LouayBac2k24() {
 }
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
-  const [initialLoad, setInitialLoad] = useState(true); // Track the initial load
 
   const Home = () => (
     <>
@@ -49,24 +46,6 @@ const App = () => {
       <Footer />
     </>
   );
-
-  useEffect(() => {
-    // Simulate loading delay even after everything is loaded
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // Adjust the delay time (in milliseconds) as needed
-  }, []);
-
-  useEffect(() => {
-    // Toggle dark mode logic
-  }, []);
-
-  useEffect(() => {
-    // Handle initial redirection
-    if (initialLoad) {
-      setInitialLoad(false);
-    }
-  }, [initialLoad]);
 
   return (
     <Router>
@@ -88,33 +67,26 @@ const App = () => {
           </script>
         </Helmet>
 
-        {isLoading ? (
-          <div className="loading-screen">
-            <img src={loadingGif} alt="Loading" className="loading-gif" />
-            <p className="loading-text">Loading...</p>
-          </div>
-        ) : (
-          <Routes>
-            {/* Handle initial redirection */}
-            <Route path="/" element={<Navigate to="/home" />} />
+        <Routes>
+          {/* Handle initial redirection */}
+          <Route path="/" element={<Navigate to="/home" />} />
 
-            {/* Render HomeNav and HomeHamburgerNav within the /home route */}
-            <Route path="/home" element={<Home />} />
+          {/* Render HomeNav and HomeHamburgerNav within the /home route */}
+          <Route path="/home" element={<Home />} />
 
-            {/* Add other routes here if needed */}
-            <Route path="*" element={<NotFound />} />
+          {/* Add other routes here if needed */}
+          <Route path="*" element={<NotFound />} />
 
-            {/* For example:
-            {/* Add other routes here if needed */}
+          {/* For example:
             <Route path="/birthday" element={<CountdownTimer />} />
+          */}
 
-            {/* For example:
+          {/* For example:
             <Route path="/about" element={<AboutComponent />} />
-            */}
-            <Route path="/resume" element={<RedirectResume />} />
-            <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
-          </Routes>
-        )}
+          */}
+          <Route path="/resume" element={<RedirectResume />} />
+          <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
+        </Routes>
       </div>
     </Router>
   );
