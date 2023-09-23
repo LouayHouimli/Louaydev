@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
     .shape {
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-      background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-image: url('images/louaypfp.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -21,7 +21,7 @@
       0% {
           border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
           background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -31,7 +31,7 @@
       50% {
           border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
           background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -41,7 +41,7 @@
       100% {
         border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -73,7 +73,7 @@
   @media screen and (max-width: 1200px) {
     .shape {
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-      background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-image: url('images/louaypfp.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -135,7 +135,7 @@
   @media screen and (max-width: 600px) {
     .shape {
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-      background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-image: url('images/louaypfp.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -217,7 +217,7 @@
   @media screen and (max-width: 540px) {
     .shape {
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-      background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-image: url('images/louaypfp.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -234,7 +234,7 @@
       0% {
           border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
           background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -243,7 +243,7 @@
       50% {
           border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
           background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -252,7 +252,7 @@
       100% {
         border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -264,7 +264,7 @@
   @media screen and (max-width: 460px) {
     .shape {
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-      background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-image: url('images/louaypfp.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -281,7 +281,7 @@
       0% {
           border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
           background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -290,7 +290,7 @@
       50% {
           border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
           background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -299,7 +299,7 @@
       100% {
         border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -310,7 +310,7 @@
   @media screen and (max-width: 344px) {
     .shape {
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-      background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-image: url('images/louaypfp.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -327,7 +327,7 @@
       0% {
           border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
           background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -336,7 +336,7 @@
       50% {
           border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
           background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -345,7 +345,7 @@
       100% {
         border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -357,7 +357,7 @@
   @media screen and (max-width: 300px) {
     .shape {
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-      background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-image: url('images/louaypfp.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -374,7 +374,7 @@
       0% {
           border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
           background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -383,7 +383,7 @@
       50% {
           border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
           background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -392,7 +392,7 @@
       100% {
         border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-        background-image: url('https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-6/376803575_720156373277030_8410440120808529002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=9RhmmyvV2pIAX-K3u9U&_nc_ht=scontent.ftun8-1.fna&oh=00_AfCjTJ7nRmAJRFYDHD4U1y-h9T7DrDtptlxBTzd3Pognew&oe=65083ED5');
+        background-image: url('images/louaypfp.jpg');
         background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
