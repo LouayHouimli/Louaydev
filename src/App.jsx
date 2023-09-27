@@ -32,6 +32,14 @@ function LouayBac2k24() {
   return null; // This component doesn't render anything
 }
 
+function BacInfo() {
+  useEffect(() => {
+    window.location.href = 'https://drive.google.com/drive/folders/1EARrbPNNftwbNoC-pW_MpVzYhoYWGAeO?fbclid=IwAR1ZMTpyWz4k9czHkLWYzbdxqQjTv-m3cjTHuaQBd9Kx3IyWYhMBjT2KYMg';
+  }, []);
+
+  return null; // This component doesn't render anything
+}
+
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [pageLoaded, setPageLoaded] = useState(false); // Track the page loading status
@@ -110,6 +118,7 @@ const App = () => {
           <Route path="/resume" element={<RedirectResume />} />
           
           <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
+          <Route path="/louaybacinfo" element={<BacInfo />} />
         </Routes>
       </div>
     </Router>
