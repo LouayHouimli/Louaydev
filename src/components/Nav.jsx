@@ -85,7 +85,9 @@ const Nav = () => {
           <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'experience')}>Experience</a></li>
           <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'projects')}>Projects</a></li>
           <li><a href="#" onClick={(event) => handleNavLinkClick(event, 'contact')}>Contact</a></li>
-         <li><a href="/louaybac2k24" >Bac 2K24</a></li>
+          <li><a href="/blog" >Blog</a></li>
+          <li><a href="/louaybac2k24" >Bac 2K24</a></li>
+
         </ul>
       </div>
     </nav>

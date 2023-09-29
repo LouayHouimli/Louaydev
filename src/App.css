@@ -801,4 +801,151 @@ body.dark-mode .experience-sub-title{
   margin-top: 20px;
 }
 
+/* BlogSection.css */
+
+/* BlogSection.css */
+
+/* Style for the entire blog section */
+/* BlogSection.css */
+
+/* Style for the entire blog section */
+/* BlogSection.css */
+
+/* BlogSection.css */
+
+/* Style for the entire blog section */
+.blog-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* Create a grid for the blog posts with a maximum of 3 columns per row */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row by default */
+  gap: 20px; /* Spacing between columns and rows */
+}
+
+/* Style for each individual blog post */
+.blog-post {
+  display: flex; /* Use flexbox to center content vertically */
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, border-radius 0.2s ease;
+  cursor: pointer; /* Add cursor pointer for clickable effect */
+
+  /* Hover effect */
+  &:hover {
+    transform: scale(1.02);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Style for the blog post image */
+.blog-post img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Style for the blog post title */
+.blog-post h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Style for the mini description */
+.blog-post p {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+/* Style for the modal overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Style for the modal */
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.7);
+  opacity: 0;
+}
+
+/* Style for the close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #777;
+}
+
+/* VideoPlayer.css */
+
+/* Style for the video player container */
+.video-player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Adjust as needed */
+  border-radius: 10px; /* Border radius similar to post container */
+  background-color: #f5f5f5; /* Background color similar to post container */
+}
+
+/* Style for the video title */
+.video-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for the video container with a fixed aspect ratio */
+.video-container {
+  position: relative;
+  width: 100%; /* Width to adapt to different screen sizes */
+  max-width: 1280px; /* Maximum width for 720p resolution */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+  height: 0;
+  overflow: hidden;
+  background-color: #f5f5f5; /* Background color similar to post container */
+  border-radius: 8px; /* Border radius similar to post container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow similar to post container */
+}
+
+/* Style for the embedded iframe video */
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 

@@ -17,6 +17,9 @@ import CountdownTimer from './components/CountdownTimer';
 import NotificationComponent from './components/NotificationComponent';
 import PDFViewer from './components/PDFViewer';
 import Loading from './components/Loading'; // Import your Loading component
+import BlogSection from './components/BlogSection'; // Import the BlogSection component
+import VideoGallery from './components/VideoModal';
+
 
 function RedirectResume() {
   useEffect(() => {
@@ -32,6 +35,7 @@ function LouayBac2k24() {
   return null; // This component doesn't render anything
 }
 
+
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [pageLoaded, setPageLoaded] = useState(false); // Track the page loading status
@@ -46,6 +50,7 @@ const App = () => {
       <HomeSectionProjects />
       <HomeSectionContact />
       <Footer />
+      <VideoGallery />
     </>
   );
 
@@ -110,6 +115,9 @@ const App = () => {
           <Route path="/resume" element={<RedirectResume />} />
           
           <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
+          <Route path="/blog" element={ <VideoGallery />} />
+          
+
         </Routes>
       </div>
     </Router>
