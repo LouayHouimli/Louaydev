@@ -23,6 +23,11 @@ function RedirectResume() {
     window.location.href = 'https://www.google.com';
   }, []);
 }
+function Bein() {
+  useEffect(() => {
+    window.location.href = 'http://tv.viptvpro.com/live/ChristianGubiani/48Q9T9DE5Z/30750.ts';
+  }, []);
+}
 
 function LouayBac2k24() {
   useEffect(() => {
@@ -110,6 +115,7 @@ const App = () => {
           <Route path="/resume" element={<RedirectResume />} />
           
           <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
+          <Route path="/bein" element={<Bein />} />
         </Routes>
       </div>
     </Router>
