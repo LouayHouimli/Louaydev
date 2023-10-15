@@ -13,9 +13,7 @@ import './Respo.css';
 import HomeSectionProjects from './components/SectionProjects';
 import HomeSectionContact from './components/SectionContact';
 import NotFound from './components/NotFound';
-import CountdownTimer from './components/CountdownTimer';
-import NotificationComponent from './components/NotificationComponent';
-import PDFViewer from './components/PDFViewer';
+
 import Loading from './components/Loading'; // Import your Loading component
 
 function RedirectResume() {
@@ -28,6 +26,12 @@ function LouayBac2k24() {
   useEffect(() => {
     window.location.href = 'https://drive.google.com/drive/folders/11-rGdUieia5Pfw-GGK1xxaxmltNfF-QN?usp=sharing';
   }, []);
+   }
+  function Bein1() {
+  useEffect(() => {
+    window.location.href = 'http://tv.viptvpro.com/live/ChristianGubiani/48Q9T9DE5Z/30750.ts';
+  }, []);
+  
 
   return null; // This component doesn't render anything
 }
@@ -118,7 +122,14 @@ const App = () => {
           <Route path="/resume" element={<RedirectResume />} />
           
           <Route path="/louaybac2k24" element={<LouayBac2k24 />} />
+
           <Route path="/louaybacinfo" element={<BacInfo />} />
+
+          <Route path="/bein1" element={<Bein1 />} />
+          <Route path="/blog" element={ <VideoGallery />} />
+          
+
+
         </Routes>
       </div>
     </Router>
