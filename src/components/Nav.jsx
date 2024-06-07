@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import moonImage from '../images/moon.png';
 import LoadingScreen from './LoadingScreen'; // Correct relative path
+import palestine from '../images/palestine.png'
 
 const Nav = () => {
   const [darkMode, setDarkMode] = useState(false); // Local darkMode state
@@ -71,6 +72,12 @@ const Nav = () => {
     <nav id="desktop-nav">
       <div className="logo">Louay.dev</div>
       {/* Add this button within the <nav> element or any appropriate location */}
+      <img
+        src={palestine}
+        alt="Palestine"
+        className={`dark-mode-icon`}
+        
+      />
       <img
         src={moonImage}
         alt="Dark Mode Toggle"
