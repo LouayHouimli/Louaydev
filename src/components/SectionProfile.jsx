@@ -79,7 +79,7 @@ const SectionProfile = () => {
             alt="Louay discord"
             className="icon"
             id="icons"
-            onClick={copyToClipboard} // Add the onClick event handler for Discord
+            onClick={() => window.open('https://discord.com/users/520177129359409152')} // Add the onClick event handler for Discord
           />
           <img src={facebookimage} alt="Louay facebook" className="icon" id="icons" />
           <img src={instagramimage} alt="Louay instagram" className='icon' id='icons' />
