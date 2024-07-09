@@ -38,12 +38,12 @@ const NotFound = () => {
           
         </div>
         <div id="socials-container">
-          <img
+        <img
             src={linkedinimage}
             alt="My LinkedIn profile"
             className="icon"
-            id='icons'
-            onClick={() => window.location.href = '#'}
+            id="icons"
+            onClick={() => window.open('https://www.linkedin.com/in/louay-houimli/')}
           />
           <img
             src={githubimage}
