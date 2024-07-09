@@ -17,12 +17,13 @@ const SectionContact = () => {
           <p><a href="mailto:louayhouimli@engineer.com">louayhouimli@engineer.com</a></p>
         </div>
         <div className="contact-info-container">
-          <img
-            src={linkedinImage}
-            alt="LinkedIn icon"
-            className="icon contact-icon"
+        <img
+            src={linkedinimage}
+            alt="My LinkedIn profile"
+            className="icon"
+            id="icons"
+            onClick={() => window.open('https://www.linkedin.com/in/louay-houimli/')}
           />
-          <p><a href="#">LinkedIn</a></p>
         </div>
       </div>
     </section>
