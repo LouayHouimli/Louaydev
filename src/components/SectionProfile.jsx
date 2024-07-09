@@ -45,7 +45,7 @@ const SectionProfile = () => {
         <div id="app">
           <Typewriter
             options={{
-              strings: ["<strong>I'M LOUAY HOUIMLI </strong>", 'A 17 YEARS OLD', "<strong>Front End Developer</strong>"],
+              strings: ["<strong>I'M LOUAY HOUIMLI </strong>", 'A 18 YEARS OLD', "<strong>Front End Developer</strong>"],
               autoStart: true,
               loop: true,
             }}
