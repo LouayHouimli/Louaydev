@@ -22,7 +22,7 @@ const SectionContact = () => {
             alt="LinkedIn icon"
             className="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/louay-houimli/">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/louay-houimli/" target='_blank'>LinkedIn</a></p>
         </div>
       </div>
     </section>
