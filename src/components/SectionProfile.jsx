@@ -15,7 +15,7 @@ const SectionProfile = () => {
     }
   };
 
-  const discordText = 'Louay#6287';
+  const discordText = 'louayishere';
 
   const copyToClipboard = () => {
     // Create a temporary input element
