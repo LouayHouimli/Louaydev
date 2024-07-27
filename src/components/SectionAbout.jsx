@@ -43,7 +43,7 @@ const SectionAbout = () => {
                 className="icon"
               />
               <h3>Education</h3>
-              <p>Bac Informatique 2024 <br />Self Learning </p>
+              <p>Bac Informatique 2024 ✔️<br />Self Learning </p>
             </div>
           </div>
           <div className="text-container">
